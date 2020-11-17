@@ -1,11 +1,13 @@
 AOS.init();
 
 
+
+
 window.onload = function() {
   Particles.init({
     selector: '.background',
         color: '#75A5B7',
-        maxParticles: 130,
+        maxParticles: 200,
         connectParticles: true,
         responsive: [
           {
@@ -16,7 +18,7 @@ window.onload = function() {
           }, {
             breakpoint: 375,
             options: {
-              maxParticles: 50
+              maxParticles: 80
             }
           }
         ]
