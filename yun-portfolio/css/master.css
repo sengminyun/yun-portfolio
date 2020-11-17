@@ -310,7 +310,7 @@ li{
       transform: translateY(15px);
       opacity:0;
   }
-  
+} 
   @keyframes downup {
       
       0% {
@@ -337,7 +337,7 @@ li{
           animation-timing-function: ease-in;
       }
   }
-}
+
 #sec-01{
   padding: 0;
 }
@@ -383,45 +383,17 @@ li{
   transition: .5s;
 }
 
-.skill{
-  position: absolute;
-  width: 100%;
-  bottom: 4em;
-  z-index: 0;
+.page-bg{
+  animation-name: rollup2;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  transition: .5s;
 }
-.skill h1{
-  text-align: center;
-  font-size: 24px;
-  margin-right: 20px;
-}
-.skill-row{
-  width: 100%;
-  padding: 40px 100px;
-}
-.right-box{
-  border-right:2px solid rgb(131, 131, 131);
-  box-sizing: border-box;
-  padding: 0 3.5em;
-}
-.left-box{
-  border-left:2px solid rgb(131, 131, 131);
-  box-sizing: border-box;
-  padding: 2em 3.5em;
-}
-.list{
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  padding:  30px 0;
-}
-
-.list p:nth-child(1){
-  font-weight: 600;
-}
-.list p:nth-child(2){
-  color: rgb(105, 105, 105);
-}
-
 @keyframes rollup{
   from{
     height: 100%;
@@ -430,6 +402,14 @@ li{
   to{
     height: 70%;
    box-shadow:  2px 2px 2px 2px rgb(173, 173, 173);
+  }
+}
+@keyframes rollup2{
+  from{
+    height: 100%;
+  }
+  to{
+    height: 70%;
   }
 }
 @keyframes pd{
@@ -555,5 +535,15 @@ li{
   color: #fff;
   line-height: 50px;
   text-align: center;
+}
+
+
+
+
+
+
+
+#pt-2{
+  background: linear-gradient( 45deg, rgb(9, 7, 150), rgb(81, 155, 252) );
 }
 /* test */
